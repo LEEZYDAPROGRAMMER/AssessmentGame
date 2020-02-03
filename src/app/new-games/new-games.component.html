@@ -1,0 +1,8 @@
+<mat-grid-list cols="5" rowHeight="2:1" [gutterSize]="'20px'">
+    <mat-grid-tile *ngFor="let g of game" class="grid">
+        <mat-card class="theCards" [ngStyle]="{'background-image':'url('+g.image+')'}" >
+        
+       </mat-card>
+    </mat-grid-tile>
+    
+  </mat-grid-list>
