@@ -9,14 +9,22 @@ import { GameService } from '../game.service';
   styleUrls: ['./new-games.component.css']
 })
 export class NewGamesComponent implements OnInit {
-public game=[]
-  constructor(private gameServ:GameService) { }
-  
+  public game;
+  public gameCategories = [];
+  public other = [];
+
+  constructor(private gameServ: GameService) { }
+
   ngOnInit() {
 
-  this.gameServ.getGames().subscribe(data => this.game=data)
-  console.log(this.game," the games array")
+    this.gameServ.getGames().subscribe(data => {
+      this.game = data;
+      console.log(this.game.categories)
+
+     
+    })
   }
 
- 
+
+
 }

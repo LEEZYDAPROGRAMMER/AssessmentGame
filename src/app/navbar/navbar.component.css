@@ -3,12 +3,13 @@
   background-color:#000;
 
 }
+
 .secTool
 {
     background-color:#373737;
     color:#fff;
    
-  
+    
    
 }
 .buttonActive
@@ -19,4 +20,7 @@
 .main{
 
     background-color: #FCFCFC;
+}
+.active-list-item {
+  background-color: #8DC63F !important; /* Note: You could also use a custom theme */
 }
