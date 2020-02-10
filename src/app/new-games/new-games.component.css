@@ -43,7 +43,8 @@
   .overlay1 {
     position: relative; 
    transition: .5s ease;
-   padding: 80px;
+   height: 100%;
+   width: 100%;
    
   }
 

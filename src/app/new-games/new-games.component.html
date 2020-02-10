@@ -3,16 +3,16 @@
 <mat-grid-list cols="5" rowHeight="2:1" [gutterSize]="'20px'">
     <mat-grid-tile *ngFor="let g of game" class="grid">
       
-      <!-- <div *ngFor="let cat of g.categories" class="overlay">
+      <div *ngFor="let cat of g.categories" class="overlay1">
 
         <div *ngIf="cat == 'top'" class="overlay1"><img src="assets\img\TOP.png" height="160" width="160"/></div>
-        <div  *ngIf="cat == 'new'" class="overlay1"><img src="assets\img\NEW.png" height="160" width="160"/></div> -->
+        <div  *ngIf="cat == 'new'" class="overlay1"><img src="assets\img\NEW.png" height="160" width="160"/></div>
         <mat-card class="theCards" [ngStyle]="{'background-image':'url('+g.image+')'}" >
           <div class="overlay"><img src="assets\img\google-play (2).png" height="60" width="60"/></div>
          
           
        </mat-card>
-      <!-- </div> -->
+      </div>
     </mat-grid-tile>
     
   </mat-grid-list>
